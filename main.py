@@ -18,4 +18,12 @@ class User(Base):
 if __name__ == '__main__':
   Base.metadata.create_all(engine)
 
+  mario_user = User(name='Mario', fullname='Mario Alfredo Torres Lagos', nickname='Negro')
+
+  print(mario_user.name)
+  print(mario_user.fullname)
+  print(mario_user.nickname)
+
+  
+
 
